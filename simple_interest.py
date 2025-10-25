@@ -12,9 +12,9 @@ if __name__ == "__main__":
     try:
         if len(sys.argv) == 4:
             print("===Program parameters ===")
-            print("Principal Amount :{sys.argv[1]}")
-            print("Rate of Interest : {sys.argv[2]}")
-            print("Time in years    : {sys.argv[3]}")
+            print("Principal Amount :",  sys.argv[1])
+            print("Rate of Interest :",  sys.argv[2])
+            print("Time in years    :",    sys.argv[3])
         # Case 1: Arguments passed (for Jenkins or CLI)
             p = float(sys.argv[1])
             r = float(sys.argv[2])
