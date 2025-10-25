@@ -11,10 +11,6 @@ if __name__ == "__main__":
     print("=== Simple Interest Calculator ===")
     try:
         if len(sys.argv) == 4:
-            print("===Program parameters ===")
-            print("Principal Amount :",  sys.argv[1])
-            print("Rate of Interest :",  sys.argv[2])
-            print("Time in years    :",    sys.argv[3])
         # Case 1: Arguments passed (for Jenkins or CLI)
             p = float(sys.argv[1])
             r = float(sys.argv[2])
@@ -24,7 +20,10 @@ if __name__ == "__main__":
             p = float(input("Enter the principal amount: "))
             r = float(input("Enter the rate of interest (%): "))
             t = float(input("Enter the time (in years): "))
-
+        print("===Program parameters ===")
+        print("Principal Amount :",  p)
+        print("Rate of Interest :",  r)
+        print("Time in years    :",  t)
         interest = calculate_simple_interest(p, r, t)
         print(f"\nSimple Interest = {interest:.2f}")
     except ValueError:
